@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Farhan's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body class="about">
+    <div class="gradient-background"></div>
+    <header class="header">
+        <h1>Farhan's Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About Me</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="wrapper">
+        <section class="about-section">
+            <div class="about-text fade-in-section">
+                <p>Hi, I’m Farhan, a passionate game designer with experience in 2D/3D game development, creative coding, and digital art. I enjoy crafting interactive experiences that engage users, and I’m constantly exploring new techniques to push the boundaries of design.</p>
+            </div>
+
+            <div class="about-image fade-in-section">
+                <img src="PP Logo.png" alt="Farhan's Logo" class="logo" id="logoButton"> <!-- Add an ID for the logo -->
+            </div>
+
+            <div class="extra-info">
+                <h2>Professional Information</h2>
+                <a href="Resume.png" class="button fade-in-section" download>📄 Download My Resume</a>
+                <a href="BusinessCard.png" class="button fade-in-section" download>💼 View My Business Card</a>
+            </div>
+
+            <div class="academic-background">
+                <h2>Academic Background</h2>
+                <p>I am currently studying at KPTM Ipoh taking Diploma in Game Design. For my high school years, I went to SMK Jalan Tiga Bandar Baru Bangi and was in a science stream class.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Modal Structure -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span> <!-- Close button -->
+            <h2>My Branding</h2>
+            <p>"Vivid represents my journey from failure to success. Every mistake has taught me important lessons and helped me grow. I see challenges as chances to learn, 
+                and I'm excited to step out of my comfort zone. I want to try new things and explore different paths. This journey is not just about reaching goals; it's about enjoying the experiences along the way."</p>
+            <div class="modal-images">
+                <img src="PP Logo name B&W.png" alt="Image 1" class="modal-image">
+                <img src="Business Card Old 2.png" alt="Image 2" class="modal-image">
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Farhan's Portfolio | Email: <a href="mailto:farhanhafidz4m@gmail.com">farhanhafidz4m@gmail.com</a></p>
+        <p>Follow me on <a href="contact.html">Social Media</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // JavaScript to handle modal opening and closing
+        const modal = document.getElementById("myModal");
+        const logoButton = document.getElementById("logoButton");
+        const closeBtn = document.querySelector(".close");
+
+        logoButton.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        closeBtn.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
