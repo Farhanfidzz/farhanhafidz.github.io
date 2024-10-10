@@ -130,6 +130,7 @@ nav ul li a:hover, nav ul li a.active {
     text-align: left; /* Keeps text alignment as left */
 }
 
+
 /* About Section */
 .about-section {
     display: grid;
@@ -164,6 +165,25 @@ nav ul li a:hover, nav ul li a.active {
     background-color: #626262; /* Change color on hover */
     transform: translateY(-3px); /* Lift effect on hover */
 }
+
+/* Style for the "Click me" text */
+.click-text {
+    font-size: 1.2em;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Change cursor to pointer (like a button) on image hover */
+#logoButton {
+    cursor: pointer; /* Makes the cursor appear like a button */
+    transition: transform 0.2s ease;
+}
+
+#logoButton:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
 
 /* Footer */
 footer {
@@ -383,6 +403,7 @@ footer p a {
 
 /* About Image */
 .about-image img {
+    background-color: gray;
     max-width: 100%; /* Image scaling */
     border-radius: 15px; /* Rounded corners for images */
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.6); /* Shadow for images */
